@@ -17,11 +17,11 @@ const Skill = ({ name, x, y }) => {
 
 export default function Skills() {
   return (
-    <div className="container">
+    <div className="container ">
       <h2 className="font-bold text-6xl mt-10 w-full text-center mb-5">
         Skills
       </h2>
-      <div className="w-full h-[750px] relative flex items-center justify-center rounded-full bg-circularLight">
+      <div className="w-full h-[750px] relative flex items-center justify-center rounded-full bg-circularLight text-white">
         <motion.div
           className="flex items-center justify-center rounded-full font-bold bg-black text-light py-3 px-14 shadow-black cursor-pointer"
           whileHover={{ scale: 1.05 }}

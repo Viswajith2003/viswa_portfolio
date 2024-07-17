@@ -8,7 +8,7 @@ function Home() {
   return (
     <section className="pt-0 lg:mt-20" id="about">
       <div className="container pt-14">
-        <div className="md:flex items-center justify-between sm: flex-col md:flex-row">
+        <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/* hero left content */}
           <div className="w-full md:basis-1/2 mt-12">
             <h5

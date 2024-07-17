@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Example using Tailwind CSS dark mode classes */
+.dark {
+  --bg-color: #1a202c;
+  --text-color: #cbd5e0;
+}
+
+.dark .text-white {
+  color: #fff;
+}
+
+.dark .bg-gray-800 {
+  background-color: #2d3748;
+}

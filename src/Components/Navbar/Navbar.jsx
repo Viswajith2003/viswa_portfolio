@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { LuMenuSquare } from "react-icons/lu";
 import { CgCloseR } from "react-icons/cg";
 import { MdDarkMode } from "react-icons/md";
@@ -6,7 +6,7 @@ import { IoSunnyOutline } from "react-icons/io5";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(false); // false for light mode, true for dark mode
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -16,11 +16,19 @@ function Navbar() {
     setMode(!mode);
   };
 
+  useEffect(() => {
+    if (mode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [mode]);
+
   return (
     <header className="w-full h-[80px] leading-[80px] flex items-center">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          {/* logo */}
+          {/* Logo */}
           <div className="flex items-center gap-[10px]">
             <span className="w-[45px] h-[45px] bg-blue-800 text-white text-[24px] font-[500] rounded-full flex items-center justify-center">
               VJ
@@ -31,7 +39,7 @@ function Navbar() {
             </div>
           </div>
 
-          {/* menu right btn start */}
+          {/* Menu buttons */}
           <div className="flex space-x-4">
             <button className="flex items-center" onClick={toggleMode}>
               {!mode ? (
@@ -44,7 +52,7 @@ function Navbar() {
               {!open ? (
                 <LuMenuSquare className="w-10 h-10 hover:scale-95" />
               ) : (
-                <LuMenuSquare className="w-10 h-10 hover:scale-95" />
+                <CgCloseR className="w-10 h-10 hover:scale-95" />
               )}
             </button>
           </div>
