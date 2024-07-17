@@ -15,6 +15,9 @@ export default function About() {
               the techi field. I'm constantly trying to expand my skills & stay
               up to date with upcoming and latest technologies.Recently I'm try
               enhance my network and enjoy with collaburation work.
+
+              I'm Self taught Front-end developer and highly passionate about
+              the techi field.Recently I'm try enhance my network and enjoy with collaburation work.
             </p> */}
       {/* <div className="flex items-center gap-9 mt-14">
               <span>
