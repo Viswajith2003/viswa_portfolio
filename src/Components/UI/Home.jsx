@@ -16,7 +16,7 @@ function Home() {
               data-aos-duration="1500"
               className="font-[600] text-[30px]"
             >
-              Welcome to my TechWorld,
+              Welcome to my TechWorld
             </h5>
             <h1
               data-aos="fade-up"
