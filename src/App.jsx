@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/UI/Home";
-import Skills from "./Components/UI/Skills";
-import Project from "./Components/UI/Project";
-import Contacts from "./Components/UI/Contacts";
-import Footer from "./Components/UI/Footer";
+import Navbar from "./Components/Navbar";
+import Home from "./UI/Home";
+import Skills from "./UI/Skills";
+import Project from "./UI/Project";
+import Contacts from "./UI/Contacts";
+import Footer from "./UI/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+import About from "./UI/About";
 
 function App() {
   useEffect(() => {
@@ -18,8 +20,9 @@ function App() {
       <Navbar />
       <div className="ml-52">
         <Home />
+        <About/>
         <Skills />
-        <Project />
+        {/* <Project /> */}
         <Contacts />
         <Footer />
       </div>

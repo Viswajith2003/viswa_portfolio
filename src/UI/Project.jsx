@@ -1,12 +1,10 @@
 import React from "react";
-// import data from "../../assets/data/projectImg.json";
-import netflix from "../../Assets/img/netflix.jpg";
-import Travel from "../../Assets/img/Travel.png";
-import Fd from "../../Assets/img/restuarant.png";
-import gym from "../../Assets/img/gym.jpg"
-import blog from "../../Assets/img/blog.png"
-import weather from "../../Assets/img/weather.png"
-
+import netflix from "../Assets/img/netflix.jpg";
+import Travel from "../Assets/img/Travel.png";
+import Fd from "../Assets/img/restaurant.png";
+import gym from "../Assets/img/gym.jpg";
+import blog from "../Assets/img/blog.png";
+import weather from "../Assets/img/weather.png";
 
 const Project = () => {
   return (
