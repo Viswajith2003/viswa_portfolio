@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../../Assets/img/profile.png";
+import profile from "../Assets/img/profile.png";
 import { FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
