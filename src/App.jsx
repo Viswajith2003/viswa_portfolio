@@ -19,12 +19,12 @@ function App() {
     <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen ">
       <Navbar />
       <div className="ml-52">
-        {/* <Home /> */}
+        <Home />
         <About />
-        {/* <Skills /> */}
-        {/* <Project /> */}
-        {/* <Contacts /> */}
-        {/* <Footer /> */}
+        <Skills />
+        <Project />
+        <Contacts />
+        <Footer />
       </div>
     </div>
   );
