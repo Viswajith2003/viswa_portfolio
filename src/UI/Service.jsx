@@ -21,7 +21,7 @@ export default function Service() {
       head: "Designer",
       sub: "Visual Masterpieces",
       content:
-        " I transform ideas into stunning designs, specializing in graphic design, UI/UX, and branding. My designs resonate with your audience and reflect your brand's unique identity. Let's collaborate on freelance projects to elevate your brand.",
+        " I transform ideas into stunning designs, specializing in graphic design, UI/UX, and branding. My designs resonate with your audience and reflect your brand's unique identity.",
       arrow: FaArrowRightLong,
     },
     {
@@ -29,7 +29,7 @@ export default function Service() {
       head: "Dancer",
       sub: "Expressive Movements",
       content:
-        " Dance is my passion, allowing me to express emotions and stories through various styles. I bring energy and creativity to every performance, captivating audiences with my art. Available for freelance performances and choreography.",
+        " Dance is my passion, allowing me to express emotions and stories through various styles. I bring energy and creativity to every performance, captivating audiences with my art.",
       arrow: FaArrowRightLong,
     },
     {
@@ -37,7 +37,7 @@ export default function Service() {
       head: "Content Creator",
       sub: "Engaging Content",
       content:
-        " I produce high-quality content across platforms, including blog posts, videos, and social media reels. My goal is to inform, entertain, and inspire, helping you connect with your audience. Ready to take on freelance content creation projects.",
+        " I produce high-quality content across platforms, including blog posts, videos, and social media reels. My goal is to inform, entertain, and inspire, helping you connect with your audience.",
       arrow: FaArrowRightLong,
     },
     {
@@ -45,7 +45,7 @@ export default function Service() {
       head: "Video Editor",
       sub: "Crafting Visual Stories",
       content:
-        " As a skilled video editor, I turn raw footage into polished, engaging videos. Specializing in storytelling, I enhance your content with seamless transitions, effects, and sound. Available for freelance video editing to bring your vision to life.",
+        " As a skilled video editor, I turn raw footage into polished, engaging videos. Specializing in storytelling, I enhance your content with seamless transitions, effects, and sound.",
       arrow: FaArrowRightLong,
     },
     {
@@ -53,7 +53,7 @@ export default function Service() {
       head: "Freelancer",
       sub: "Versatile and Reliable",
       content:
-        " As a freelancer, I offer a range of services including development, design, dance, content creation, and video editing. With a commitment to quality and timely delivery, I help bring your projects to life, no matter the scope. Let's collaborate and achieve your goals together.",
+        " As a freelancer, I offer a range of services including  web development, video editing. With a commitment to quality and timely delivery, Let's collaborate and achieve your goals together.",
       arrow: FaArrowRightLong,
     },
   ];
