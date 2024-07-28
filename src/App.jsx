@@ -9,6 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import About from "./UI/About";
+import Service from "./UI/Service";
 
 function App() {
   useEffect(() => {
@@ -19,12 +20,13 @@ function App() {
     <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen ">
       <Navbar />
       <div className="ml-52">
-        <Home />
-        <About />
-        <Skills />
+        {/* <Home />
+        <About /> */}
+        <Service/>
+        {/* <Skills />
         <Project />
         <Contacts />
-        <Footer />
+        <Footer /> */}
       </div>
     </div>
   );
