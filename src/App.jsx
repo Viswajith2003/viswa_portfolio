@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./UI/Home";
 import Skills from "./UI/Skills";
-// import Project from "./UI/Project";
+import Project from "./UI/Project";
 import Contacts from "./UI/Contacts";
 import Footer from "./UI/Footer";
 import Aos from "aos";
