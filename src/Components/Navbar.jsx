@@ -1,28 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { LuMenuSquare } from "react-icons/lu";
 import { CgCloseR } from "react-icons/cg";
 import { MdDarkMode } from "react-icons/md";
 import { IoSunnyOutline } from "react-icons/io5";
 
-function Navbar() {
+function Navbar({ mode, toggleMode }) {
   const [open, setOpen] = useState(false);
-  const [mode, setMode] = useState(false); // false for light mode, true for dark mode
 
   const toggleMenu = () => {
     setOpen(!open);
   };
-
-  const toggleMode = () => {
-    setMode(!mode);
-  };
-
-  useEffect(() => {
-    if (mode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [mode]);
 
   return (
     <header className="w-full h-[80px] leading-[80px] flex items-center">
@@ -61,7 +48,9 @@ function Navbar() {
 
       {/* Slide-in Navbar */}
       <div
-        className={`fixed top-0 right-0 w-[250px] h-full bg-gray-800 text-white transform ${
+        className={`fixed top-0 right-0 w-[250px] h-full ${
+          mode ? "bg-gray-800 text-white" : "bg-gray-100 text-black"
+        } transform ${
           open ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out z-50`}
       >

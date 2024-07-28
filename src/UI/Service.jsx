@@ -11,7 +11,7 @@ import { BsPersonArmsUp } from "react-icons/bs";
 import { MdSlowMotionVideo } from "react-icons/md";
 import { BsFillPersonVcardFill } from "react-icons/bs";
 
-const Activeslider = () => {
+const Activeslider = ({ mode }) => {
   const cards = [
     {
       logo: IoCodeSlash,
@@ -64,8 +64,18 @@ const Activeslider = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center flex-col h-[900px]">
-      <h1 className="text-5xl font-bold mt-16 text-white">My Services</h1>
+    <div
+      className={`flex items-center justify-center flex-col h-[880px] w-[88%] ${
+        mode ? "bg-gray-900" : "bg-gray-100"
+      }`}
+    >
+      <h1
+        className={`text-5xl font-bold mt-16 ${
+          mode ? "text-white" : "text-black"
+        }`}
+      >
+        My Services
+      </h1>
       <Swiper
         breakpoints={{
           340: {
@@ -86,19 +96,35 @@ const Activeslider = () => {
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer">
+            <div
+              className={`flex flex-col gap-6 mb-20 group relative shadow-lg rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer ${
+                mode ? "bg-gray-800 text-white" : "bg-white text-black"
+              }`}
+            >
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${card.backgroundImage})` }}
               />
-              <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
+              <div
+                className={`absolute inset-0 ${
+                  mode ? "bg-black opacity-10" : "bg-white opacity-10"
+                } group-hover:opacity-50`}
+              />
               <div className="relative flex flex-col gap-3">
-                <card.logo className="text-blue-600 group-hover:text-blue-400 w-[32px] h-[32px]" />
+                <card.logo
+                  className={`w-[32px] h-[32px] ${
+                    mode ? "text-blue-400" : "text-blue-600"
+                  } group-hover:text-blue-400`}
+                />
                 <h2 className="text-xl lg:text-2xl">{card.head}</h2>
                 <h4 className="text-[16px] font-semibold">{card.sub}</h4>
                 <p className="lg:text-[18px]">{card.content}</p>
               </div>
-              <card.arrow className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:-rotate-45 duration-100" />
+              <card.arrow
+                className={`absolute bottom-5 left-5 w-[35px] h-[35px] ${
+                  mode ? "text-white" : "text-black"
+                } group-hover:text-blue-500 group-hover:-rotate-45 duration-100`}
+              />
             </div>
           </SwiperSlide>
         ))}
