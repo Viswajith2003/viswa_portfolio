@@ -34,13 +34,13 @@ function App() {
     >
       <Navbar mode={mode} toggleMode={toggleMode} />
       <div className="ml-52">
-        <Home />
+        {/* <Home />
         <About />
         <Service mode={mode} />
-        <Skills />
+        <Skills /> */}
         <Project />
-        <Contacts />
-        <Footer />
+        {/* <Contacts />
+        <Footer /> */}
       </div>
     </div>
   );

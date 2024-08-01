@@ -1,26 +1,40 @@
 import React from "react";
+import { IoCodeSlashSharp } from "react-icons/io5";
 
 export default function Project() {
   return (
     <div>
-      <div>
-        <h1>
+      <div className="mt-14">
+        <h1 className="text-4xl font-bold">
           Somthings <br /> I've worked on
         </h1>
       </div>
-      <div>
-        <div className="p-3">
-          <div>image</div>
-          <h1>Heading</h1>
-          <div className="flex gap-3">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JS</div>
+      <div className="mt-16">
+        <div className="p-3 border border-black rounded-lg w-72 h-auto">
+          <div className="border border-black rounded-lg w-54 h-40"></div>
+          <h1 className="text-2xl font-bold mt-3">Heading</h1>
+          <div className="flex gap-3 my-3 text-center">
+            <div className="border border-black p-1 rounded-full w-auto h-7 text-[14px] px-2">
+              HTML
+            </div>
+            <div className="border border-black p-1 rounded-full w-auto h-7 text-[14px] px-2">
+              CSS
+            </div>
+            <div className="border border-black p-1 rounded-full w-auto h-7 text-[14px] px-2">
+              JavaScript
+            </div>
           </div>
-          <p>contents</p>
-          <div>
-            <div>code</div>
-            <div>Live View</div>
+          <p>
+            Web technologies include tools and techniques for developing
+            websites and web applications.
+          </p>
+          <div className="flex gap-3 mt-3 text-center">
+            <div className="border border-black p-2 rounded-xl w-1/4">
+              <IoCodeSlashSharp className="w-10 h-6" />
+            </div>
+            <div className="border border-black p-2 rounded-xl w-3/4">
+              Live View
+            </div>
           </div>
         </div>
       </div>
