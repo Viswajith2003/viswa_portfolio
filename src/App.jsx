@@ -33,7 +33,7 @@ function App() {
       }`}
     >
       <Navbar mode={mode} toggleMode={toggleMode} />
-      <div className="ml-52">
+      <div className="">
         {/* <Home />
         <About />
         <Service mode={mode} />

@@ -12,7 +12,7 @@ import { data } from "../lib/projectdata";
 export default function Project() {
   return (
     <div className="container mx-auto p-4">
-      <h1 className="heading text-4xl font-bold mt-14">
+      <h1 className="heading text-3xl md:text-4xl font-bold mt-14 text-center md:text-left">
         Somethings <br /> I've worked on
       </h1>
       <Swiper
@@ -34,22 +34,22 @@ export default function Project() {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper-container mt-14 gap-8  py-12"
+        className="bg-yellow-300 mt-14 gap-8 py-12 "
       >
         {data.map((item, index) => (
           <SwiperSlide
             key={index}
-            className="card p-3 border border-[#00fbff] rounded-lg w-72 h-auto bg-[#081737] text-white"
+            className="card p-3 border border-[#00fbff] rounded-lg w-full md:w-72 h-auto bg-[#081737] text-white"
           >
-            <div className="border border-black rounded-lg w-54 h-40">
+            <div className="border border-black rounded-lg w-full h-40">
               <img
                 src={item.img}
                 alt={item.head}
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <h1 className="text-2xl font-bold mt-3">{item.head}</h1>
-            <div className="flex gap-3 my-3 text-center">
+            <h1 className="text-xl md:text-2xl font-bold mt-3">{item.head}</h1>
+            <div className="flex gap-3 my-3 text-center justify-center md:justify-start">
               <div className="border border-black p-1 rounded-full w-auto h-7 text-[14px] px-2 text-black bg-[#f8ec02]">
                 {item.lang1}
               </div>
@@ -61,8 +61,8 @@ export default function Project() {
               </div>
             </div>
             <p>{item.content}</p>
-            <div className="flex gap-3 mt-3 text-center">
-              <div className="border border-black p-2 rounded-xl w-1/4  bg-[#053df6]">
+            <div className="flex gap-3 mt-3 text-center justify-center md:justify-start">
+              <div className="border border-black p-2 rounded-xl w-1/4 bg-[#053df6]">
                 <item.icon className="w-10 h-6" />
               </div>
               <div className="border border-black p-2 rounded-xl w-3/4 text-black bg-[#02f6fe]">
@@ -71,7 +71,7 @@ export default function Project() {
             </div>
           </SwiperSlide>
         ))}
-        <div className="swiper-button-prev slider-arrow ">
+        <div className="swiper-button-prev slider-arrow">
           <ion-icon name="arrow-back-outline"></ion-icon>
         </div>
         <div className="swiper-button-next slider-arrow">
