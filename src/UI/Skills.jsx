@@ -17,8 +17,8 @@ const Skill = ({ name, x, y }) => {
 
 export default function Skills() {
   return (
-    <div className="container ">
-      <h2 className="font-bold text-6xl mt-10 w-full text-center mb-5">
+    <div className="container mx-auto">
+      <h2 className="font-bold text-6xl mt-10 w-full text-center mb-10">
         Skills
       </h2>
       <div className="w-full h-[750px] relative flex items-center justify-center rounded-full bg-circularLight text-white">

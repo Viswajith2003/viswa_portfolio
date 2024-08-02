@@ -65,7 +65,7 @@ const Activeslider = ({ mode }) => {
 
   return (
     <div
-      className={`flex items-center justify-center flex-col h-[880px] w-[88%] ${
+      className={`container mx-auto flex items-center justify-center flex-col h-[880px] w-[88%] ${
         mode ? "bg-gray-900" : "bg-gray-100"
       }`}
     >

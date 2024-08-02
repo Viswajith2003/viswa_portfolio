@@ -34,7 +34,7 @@ export default function Project() {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="bg-yellow-300 mt-14 gap-8 py-12 "
+        className="mt-14 gap-8 py-12 "
       >
         {data.map((item, index) => (
           <SwiperSlide

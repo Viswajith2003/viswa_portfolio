@@ -37,10 +37,10 @@ function App() {
         {/* <Home />
         <About />
         <Service mode={mode} />
-        <Skills /> */}
-        <Project />
-        {/* <Contacts />
-        <Footer /> */}
+        <Skills />
+        <Project /> */}
+        <Contacts />
+        {/* <Footer /> */}
       </div>
     </div>
   );

@@ -1,13 +1,46 @@
 import React from "react";
+import { FaLinkedin } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 function Contacts() {
   return (
-    <section id="contact" className="pb-16">
+    <section id="contact" className="pb-16 container mx-auto">
       <div className="container">
         <h1 className="font-bold text-6xl mt-20 w-full text-center mb-10">
           Get in touch..
         </h1>
         <div className="md:flex justify-between items-center ">
+          <div className="card p-3 border-2 border-[#000000] rounded-lg w-80 md:w-[350px] h-[450px] bg-[#e6e8eb] text-black space-y-4">
+            <div className="space-y-6 mt-8">
+              <input
+                type="text"
+                placeholder="Name :"
+                className="border-2 border-black p-3 rounded-md h-12 w-full"
+              />
+              <input
+                type="email"
+                placeholder="Email :"
+                className="border-2 border-black p-3 rounded-md h-12 w-full"
+              />
+              <textarea
+                name="message"
+                placeholder="Message :"
+                className="border-2 border-black p-3 rounded-md h-40 w-full"
+              ></textarea>
+            </div>
+            <div className="flex justify-between">
+              <div className="flex space-x-5 mt-3">
+                <BsGithub className="w-8 h-8  hover:scale-95" />
+                <BsInstagram className="w-8 h-8 hover:scale-95" />
+                <FaLinkedin className="w-8 h-8 hover:scale-95" />
+              </div>
+
+              <button className="p-2 w-36 mt-2 font-bold text-white rounded-lg bg-blue-600 hover:scale-95">
+                Submit
+              </button>
+            </div>
+          </div>
           <div className="w-full md:w-1/2 h-[300px] sm:h-[450px] border-2 border-black rounded-lg">
             <iframe
               title="google-maps"
@@ -20,42 +53,6 @@ function Contacts() {
               referrerPolicy="no-referrer-when-downgrade"
               className="border-0 w-full h-full"
             ></iframe>
-          </div>
-          <div className="w-full nt-5 md:0 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-100 px-4 lg:px-8 py-8">
-            <form className="w-full">
-              <div className="mb-3">
-                <input
-                  type="text"
-                  className="w-full p-3 focus:outline-none rounded-[5px]"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  type="email"
-                  className="w-full p-3 focus:outline-none rounded-[5px]"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  type="text"
-                  className="w-full p-3 focus:outline-none rounded-[5px]"
-                  placeholder="Subject"
-                />
-              </div>
-              <div className="mb-3">
-                <textarea
-                  type="text"
-                  rows={3}
-                  className="w-full p-3 focus:outline-none rounded-[5px]"
-                  placeholder="Enter your message"
-                />
-              </div>
-              <button className="w-full p-3 focus:outline-none rounded-[5px] bg-blue-700 text-white hover:bg-black text-center ease-linear duration-150">
-                Submit
-              </button>
-            </form>
           </div>
         </div>
       </div>
