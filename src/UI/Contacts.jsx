@@ -37,7 +37,7 @@ function Contacts() {
               </div>
 
               <button className="p-2 w-36 mt-2 font-bold text-white rounded-lg bg-blue-600 hover:scale-95">
-                Submit
+                Submited
               </button>
             </div>
           </div>
