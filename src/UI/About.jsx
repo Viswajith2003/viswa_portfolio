@@ -11,17 +11,17 @@ import {
 } from "lucide-react";
 
 const infoData = [
-  { icon: <User2 size={20} />, text: "Jerald Joyson" },
-  { icon: <PhoneCall size={20} />, text: "+91 7592963353" },
-  { icon: <MailIcon size={20} />, text: "Jeraldjoyson20@gmail.com" },
-  { icon: <Calendar size={20} />, text: "Born on 29 May, 2002" },
+  { icon: <User2 size={20} />, text: "Viswajith vp" },
+  { icon: <PhoneCall size={20} />, text: "+91 9072906576" },
+  { icon: <MailIcon size={20} />, text: "viswajithviswa715@gmail.com" },
+  { icon: <Calendar size={20} />, text: "Born on 10 Jan, 2003" },
   {
     icon: <GraduationCap size={20} />,
     text: "Currently Studying at Bachelor of Technology in Computer Science",
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "Nerinjampilly house Inchakundu P.O,Kalkuzhy,Thrissur,680312",
+    text: "Krishna Vihar(H), Kodakkad(PO), 676319",
   },
 ];
 
@@ -30,17 +30,17 @@ const qualificationData = [
     title: "education",
     data: [
       {
-        university: "GHSS Mupliyam",
+        university: "CBHSS Vallikunnu",
         qualification: "SSLC",
         years: "2016 - 2017",
       },
       {
-        university: "GHSS Mupliyam",
+        university: "VHSE Chelari",
         qualification: "PLUS TWO",
         years: "2018 - 2020",
       },
       {
-        university: "Maharaja's Technological Institute, Thrissur",
+        university: "AKNM Polytechnic College,Chelari",
         qualification: "DIPLOMA",
         years: "2020-2022",
       },
@@ -51,34 +51,7 @@ const qualificationData = [
       },
     ],
   },
-  {
-    title: "experience",
-    data: [
-      {
-        company: " ",
-        role: " ",
-        years: " ",
-      },
-      {
-        company: " ",
-        role: " ",
-        years: " ",
-      },
-      {
-        company: " ",
-        role: " ",
-        years: " ",
-      },
-      {
-        company: " ",
-        role: " ",
-        years: " ",
-      },
-    ],
-  },
 ];
-
-
 
 const About = () => {
   const getData = (arr, title) => {
@@ -149,12 +122,6 @@ const About = () => {
                         );
                       })}
                     </div>
-                    {/* languages */}
-                    <div className="flex flex-col gap-y-2">
-                      <div className="text-primary">Language Skill</div>
-                      <div className="border-b border-border"></div>
-                      <div>Malayalam, Tamil, English</div>
-                    </div>
                   </div>
                 </TabsContent>
                 {/* qualifications */}
@@ -165,40 +132,6 @@ const About = () => {
                     </h3>
                     {/* experience and education */}
                     <div className="flex">
-                      {/* experiences */}
-                      {/* <div className="flex flex-col gap-y-6">
-                        <div className="flex gap-x-4 items-center text-[22px] text-primary">
-                          <Briefcase />
-                          <h4 className="capitalize font-medium">
-                            {getData(qualificationData, 'experience').title}
-                          </h4>
-                        </div>
-                        <div className="flex flex-col gap-y-8">
-                          {getData(qualificationData, 'experience').data.map(
-                            (item, index) => {
-                              const { company, role, years } = item;
-                              return (
-                                <div className="flex gap-x-8 group" key={index}>
-                                  <div className="h-[84px] w-[1px] bg-border relative ml-2 ">
-                                    <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
-                                  </div>
-                                  <div>
-                                    <div className="group-hover:translate-y-[84px] transition-all duration-500">
-                                      <div className="flex items-center gap-x-2 text-xl font-semibold capitalize mb-2">
-                                        <div>{company}</div>
-                                        <div>({years})</div>
-                                      </div>
-                                      <div className="text-lg mb-4 capitalize">
-                                        {role}
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              );
-                            }
-                          )}
-                        </div>
-                      </div> */}
                       {/* education */}
                       <div className="flex flex-col gap-y-6 w-full">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">

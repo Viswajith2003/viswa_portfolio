@@ -9,6 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import About from "./UI/About";
 import Service from "./UI/Service";
+// import ParticlesComponent from "./Components/particles.js"; // Adjust the import path accordingly
 
 function App() {
   const [mode, setMode] = useState(false); // false for light mode, true for dark mode
@@ -32,15 +33,16 @@ function App() {
         mode ? "dark" : ""
       }`}
     >
+      {/* <ParticlesComponent id="particles" /> */}
       <Navbar mode={mode} toggleMode={toggleMode} />
       <div className="">
-        {/* <Home />
+        <Home />
         <About />
         <Service mode={mode} />
         <Skills />
-        <Project /> */}
+        <Project />
         <Contacts />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
