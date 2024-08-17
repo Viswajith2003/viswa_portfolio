@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Example using Tailwind CSS dark mode classes */
-.dark {
+/* .dark {
   --bg-color: #1a202c;
   --text-color: #cbd5e0;
 }
@@ -14,4 +14,4 @@
 
 .dark .bg-gray-800 {
   background-color: #2d3748;
-}
+} */

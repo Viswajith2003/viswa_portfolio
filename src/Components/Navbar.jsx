@@ -29,11 +29,11 @@ function Navbar({ mode, toggleMode }) {
           {/* Menu buttons */}
           <div className="flex space-x-4">
             <button className="flex items-center" onClick={toggleMode}>
-              {!mode ? (
+              {/* {!mode ? (
                 <IoSunnyOutline className="w-10 h-10 hover:scale-95" />
               ) : (
                 <MdDarkMode className="w-10 h-10 hover:scale-95" />
-              )}
+              )} */}
             </button>
             <button className="flex items-center" onClick={toggleMenu}>
               {!open ? (

@@ -65,14 +65,12 @@ const Activeslider = ({ mode }) => {
 
   return (
     <div
-      className={`container mx-auto flex items-center justify-center flex-col h-[880px] w-[88%] ${
-        mode ? "bg-gray-900" : "bg-gray-100"
-      }`}
+      className={`container mx-auto flex items-center justify-center flex-col h-[880px] w-[88%]`}
     >
       <h1
-        className={`text-5xl font-bold mt-16 ${
-          mode ? "text-white" : "text-black"
-        }`}
+        className={`text-5xl font-bold mt-16 
+          
+        `}
       >
         My Services
       </h1>
@@ -97,9 +95,9 @@ const Activeslider = ({ mode }) => {
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`flex flex-col gap-6 mb-20 group relative shadow-lg rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer ${
-                mode ? "bg-gray-800 text-white" : "bg-white text-black"
-              }`}
+              className={`flex flex-col gap-6 mb-20 group relative shadow-lg rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer
+                
+              `}
             >
               <div
                 className="absolute inset-0 bg-cover bg-center"

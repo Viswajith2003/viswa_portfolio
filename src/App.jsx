@@ -18,27 +18,27 @@ function App() {
     setMode(!mode);
   };
 
-  useEffect(() => {
-    Aos.init();
-    if (mode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [mode]);
+  // useEffect(() => {
+  //   Aos.init();
+  //   if (mode) {
+  //     document.documentElement.classList.add("dark");
+  //   } else {
+  //     document.documentElement.classList.remove("dark");
+  //   }
+  // }, [mode]);
 
   return (
     <div
-      className={`bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen ${
-        mode ? "dark" : ""
+      className={`bg-[#01020b] text-black dark:text-white min-h-screen 
+        
       }`}
     >
       {/* <ParticlesComponent id="particles" /> */}
-      <Navbar mode={mode} toggleMode={toggleMode} />
+      <Navbar />
       <div className="">
         <Home />
         <About />
-        <Service mode={mode} />
+        <Service />
         <Skills />
         <Project />
         <Contacts />
