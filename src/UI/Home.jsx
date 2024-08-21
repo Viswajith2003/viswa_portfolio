@@ -14,7 +14,7 @@ function Home() {
             <h5
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="font-[600] text-[30px] text-white"
+              className="font-[600] text-[30px] "
             >
               Welcome to my TechWorld
             </h5>
